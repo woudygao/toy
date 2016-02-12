@@ -32,6 +32,10 @@ function solve() {
 
             $before = $sudoku->getDefined();
 
+            if (81 == $before) {
+                break;
+            }
+
             echo 'line check' . PHP_EOL;
             check($obj, $sudoku, new linechecker(), $time, 'line');
 
@@ -50,10 +54,10 @@ function solve() {
                 continue;
             }
 
-            echo 'hyper check' . PHP_EOL;
-            check($obj, $sudoku, new hyperchecker(), $time, 'hyper');
-
-            $time ++;
+//            echo 'hyper check' . PHP_EOL;
+//            check($obj, $sudoku, new hyperchecker(), $time, 'hyper');
+//
+//            $time ++;
         }
     }
     catch (Exception $e) {
