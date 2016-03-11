@@ -1,6 +1,10 @@
 ## toy
 sudoku解题小程序
 
+#### 2016.3.11 更新
++ 1. 重新使用回溯的计算方式，可以解决 http://www.henan100.com/luoyang/tbgz/2012/12234.shtml 提到的九宫格
++ 2. 之后有时间肩回溯的过程，使用dot+graphviz 绘制图像；或者将回溯的过程并发化
+
 #### 使用：
 + 1. 通过编辑map.xlsx录入题目
 + 2. 然后 php solve.php
